@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+
+    <style>
+        .table{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" class="table">
+        <tr>
+            <td>
+    <h1 style="text-align: center;">Customer Survey Form</h1><hr>
+
+    <form action="">
+
+        <label for="firstname">First Name: </label>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter your first name"><br><br>
+
+        <label for="lastname">Last Name: </label>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter your last name"><br><br>
+
+        <label for="email">Email id: </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email id"><br><br>
+
+        <label for="mobile">Mobile No.: </label>
+        <input type="number" name="mobile" id="mobile" placeholder="Enter your Mobile number"><br><br>
+
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="gender" checked>Male
+        <input type="radio" name="gender" id="gender">Female
+        <input type="radio" name="gender" id="gender">Other <br><br>
+
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" id="dob"><br><br>
+
+        <label for="country">Country: </label>
+        <select name="country" id="country">
+            <option value="India" selected>India</option>
+            <option value="Australia">Australia</option>
+            <option value="England">England</option>
+            <option value="New Zeland">New Zeland</option>
+            <option value="South Africa">South Africa</option>
+            <option value="America">America</option>
+            <option value="Afghanistan">Afghanistan</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="Bangladesh">Bangladesh</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit" onclick="submitForm()">
+        <input type="reset" value="Reset" onclick="resetForm()">
+
+    </form>
+</td>
+</tr>
+</table>
+
+    <script>
+
+        function submitForm(){
+
+            alert("All information saved successfully...");
+        }
+
+        function resetForm(){
+            confirm("Are you confirm for reset you form data..?")
+        }
+
+    </script>
+</body>
+
+</html>
